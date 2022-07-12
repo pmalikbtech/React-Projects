@@ -7,9 +7,9 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div className="container">
         <Link to="/" className="navbar-brand fs-3 ubuntu">
-          Rick & Morty <span className="text-primary">WiKi</span>
+          Rick & Morty Demo
         </Link>
-        <style jsx>{`
+        <style>{`
           button[aria-expanded="false"] > .close {
             display: none;
           }
@@ -26,8 +26,8 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="fas fa-bars open text-dark"></span>
-          <span class="fas fa-times close text-dark"></span>
+          <span className="fas fa-bars open text-dark"></span>
+          <span className="fas fa-times close text-dark"></span>
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
@@ -41,8 +41,7 @@ const Navbar = () => {
               Episode
             </NavLink>
             <NavLink
-              activeClassName="active"
-              className="nav-link"
+              className="active nav-link"
               to="/location"
             >
               Location

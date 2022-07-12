@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.scss";
-import CardDetails from "./CardDetails";
 
 const Card = ({ page, results }) => {
   let display;
@@ -22,10 +21,10 @@ const Card = ({ page, results }) => {
           >
             <img className={`${styles.img} img-fluid`} src={image} alt="" />
             <div className={`${styles.content}`}>
-              <div className="fs-5 fw-bold mb-4">{name}</div>
+              <div className="fw-bold mb-4">{name}</div>
               <div className="">
-                <div className="fs-6 fw-normal">Last Location</div>
-                <div className="fs-5">{location.name}</div>
+                <div className="fw-normal">Last Location</div>
+                <div className="l-head">{location.name}</div>
               </div>
             </div>
           </div>
